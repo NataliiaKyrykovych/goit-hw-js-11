@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default class PixabayApiService {
     constructor() {
-    this.key = '37015627-a7b00f6a8ef807ae57085c4f8';
+    this.key = '37090513-acbb00b0e0c56d37199487aa4';
     this.baseURL = 'https://pixabay.com/api/';
     this.searchQuery = '';
     this.page = 1;
