@@ -11,7 +11,7 @@ export default class PixabayApiService {
 
 async fetchImage() {
     const { data } = await axios.get(
-        `${URL}?key=${this.key}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=${this.perPage}&page=${this.page}`
+        `${this.baseURL}?key=${this.key}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=${this.perPage}&page=${this.page}`
     );
     this.page += 1;
     return data;
